@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B812658722BA8A6C0026B053 /* Digit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812658622BA8A6B0026B053 /* Digit.swift */; };
+		B8D14CC522B9820D001E7AF4 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D14CC422B9820D001E7AF4 /* Clock.swift */; };
 		B8D2F31622B83D4800355655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2F31522B83D4800355655 /* AppDelegate.swift */; };
 		B8D2F31822B83D4800355655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2F31722B83D4800355655 /* ViewController.swift */; };
 		B8D2F31B22B83D4800355655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D2F31922B83D4800355655 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B812658622BA8A6B0026B053 /* Digit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digit.swift; sourceTree = "<group>"; };
+		B8D14CC422B9820D001E7AF4 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		B8D2F31222B83D4800355655 /* clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D2F31522B83D4800355655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8D2F31722B83D4800355655 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				B8D2F31522B83D4800355655 /* AppDelegate.swift */,
-				B8D2F31722B83D4800355655 /* ViewController.swift */,
 				B8D2F31922B83D4800355655 /* Main.storyboard */,
+				B8D2F31722B83D4800355655 /* ViewController.swift */,
+				B812658622BA8A6B0026B053 /* Digit.swift */,
+				B8D14CC422B9820D001E7AF4 /* Clock.swift */,
 				B8D2F31C22B83D4900355655 /* Assets.xcassets */,
 				B8D2F31E22B83D4900355655 /* LaunchScreen.storyboard */,
 				B8D2F32122B83D4900355655 /* Info.plist */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8D14CC522B9820D001E7AF4 /* Clock.swift in Sources */,
 				B8D2F31822B83D4800355655 /* ViewController.swift in Sources */,
 				B8D2F31622B83D4800355655 /* AppDelegate.swift in Sources */,
+				B812658722BA8A6C0026B053 /* Digit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5B87H2U8KV;
 				INFOPLIST_FILE = clock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5B87H2U8KV;
 				INFOPLIST_FILE = clock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
