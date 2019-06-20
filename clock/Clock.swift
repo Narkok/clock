@@ -74,11 +74,16 @@ class Clock: UIView {
         
         if arrowLayers.count == 0 { return }
         
-        rotate(layer: arrowLayers[0], fromValue: num2rad(self.angle1), toValue: num2rad(angle1))
-        rotate(layer: arrowLayers[1], fromValue: num2rad(self.angle2), toValue: num2rad(angle2))
-
-        self.angle1 = angle1
-        self.angle2 = angle2
+        if (self.angle1 != angle1) {
+            rotate(layer: arrowLayers[0], fromValue: num2rad(self.angle1), toValue: num2rad(angle1))
+            self.angle1 = angle1
+        }
+        
+        if (self.angle2 != angle2) {
+            rotate(layer: arrowLayers[1], fromValue: num2rad(self.angle2), toValue: num2rad(angle2))
+            self.angle2 = angle2
+        }
+        
     }
     
     private func rotate(layer: CALayer, fromValue: CGFloat, toValue: CGFloat) {
