@@ -48,6 +48,16 @@ class Digit: UIView {
         
     }
     
+    func setMode(to darkMode: Bool) {
+        
+        for i in 0..<clocks.count {
+            for j in 0..<clocks[i].count {
+                clocks[i][j].backgroundColor = darkMode ? UIColor.black : UIColor.white
+                clocks[i][j].setMode(to: darkMode)
+            }
+        }
+    }
+    
 }
 
 

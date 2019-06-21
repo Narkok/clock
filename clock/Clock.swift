@@ -70,6 +70,12 @@ class Clock: UIView {
         }
     }
     
+    func setMode(to darkMode: Bool) {
+        arrows[0].backgroundColor = darkMode ? UIColor.white.cgColor : UIColor.black.cgColor
+        arrows[1].backgroundColor = darkMode ? UIColor.white.cgColor : UIColor.black.cgColor
+        circleView.layer.borderColor = UIColor(white: darkMode ? 0.35 : 0.8, alpha: 1).cgColor
+    }
+    
     func rotate(angle1: Int, angle2: Int) {
         
         if arrowLayers.count == 0 { return }

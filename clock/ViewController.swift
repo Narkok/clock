@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     var frameClocks = [Clock]()
     
+    var darkMode = false
     var timer: Timer!
     
     override func viewDidAppear(_ animated: Bool) {
@@ -125,6 +126,24 @@ class ViewController: UIViewController {
 
         second.first.showDigit(digit: _seconds/10)
         second.second.showDigit(digit: _seconds%10)
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        darkMode = !darkMode
+        setMode()
+    }
+    
+    private func setMode() {
+        view.backgroundColor = darkMode ? UIColor.black : UIColor.white
+        
+        hour.first.setMode(to: darkMode)
+        hour.second.setMode(to: darkMode)
+        
+        minute.first.setMode(to: darkMode)
+        minute.second.setMode(to: darkMode)
+        
+        second.first.setMode(to: darkMode)
+        second.second.setMode(to: darkMode)
     }
     
     override var prefersStatusBarHidden: Bool {
